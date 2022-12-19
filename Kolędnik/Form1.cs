@@ -20,7 +20,17 @@ namespace Kolędnik
 
         private void dodawanie_Click(object sender, EventArgs e)
         {
-
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Multiselect = true;
+            if(ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                files = ofd.FileNames;
+                paths = ofd.FileNames;
+                for(int x = 0; x < files.Length; x++)
+                {
+                    
+                }
+            }
         }
 
         private void stop_Click(object sender, EventArgs e)
