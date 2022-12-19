@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kolędnik", "Kolędnik\Kolędnik.csproj", "{F941691D-86DF-4A05-9F39-AB3CFAB3186A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F941691D-86DF-4A05-9F39-AB3CFAB3186A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F941691D-86DF-4A05-9F39-AB3CFAB3186A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F941691D-86DF-4A05-9F39-AB3CFAB3186A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F941691D-86DF-4A05-9F39-AB3CFAB3186A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FCBCD8B2-7B29-425E-B98D-87C16BE26E26}
+	EndGlobalSection
+EndGlobal
