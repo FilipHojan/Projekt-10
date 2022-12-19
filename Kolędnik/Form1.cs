@@ -16,13 +16,19 @@ namespace Kolędnik
         {
             InitializeComponent();
         }
+        string[] paths, files;
 
-        private void button4_Click(object sender, EventArgs e)
+        private void dodawanie_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void stop_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void restart_Click(object sender, EventArgs e)
         {
 
         }

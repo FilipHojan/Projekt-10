@@ -30,59 +30,63 @@ namespace Kolędnik
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.play = new System.Windows.Forms.Button();
+            this.stop = new System.Windows.Forms.Button();
+            this.restart = new System.Windows.Forms.Button();
+            this.dodawanie = new System.Windows.Forms.Button();
             this.Losowosc = new System.Windows.Forms.CheckBox();
+            this.listapiosenek = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // button1
+            // play
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(132, 89);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 79);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.play.BackColor = System.Drawing.Color.Transparent;
+            this.play.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.play.Image = ((System.Drawing.Image)(resources.GetObject("play.Image")));
+            this.play.Location = new System.Drawing.Point(132, 89);
+            this.play.Name = "play";
+            this.play.Size = new System.Drawing.Size(99, 79);
+            this.play.TabIndex = 0;
+            this.play.UseVisualStyleBackColor = false;
+            this.play.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // stop
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(132, 186);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(99, 82);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = false;
+            this.stop.BackColor = System.Drawing.Color.Transparent;
+            this.stop.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.stop.Image = ((System.Drawing.Image)(resources.GetObject("stop.Image")));
+            this.stop.Location = new System.Drawing.Point(132, 186);
+            this.stop.Name = "stop";
+            this.stop.Size = new System.Drawing.Size(99, 82);
+            this.stop.TabIndex = 1;
+            this.stop.UseVisualStyleBackColor = false;
+            this.stop.Click += new System.EventHandler(this.stop_Click);
             // 
-            // button3
+            // restart
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(132, 287);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(99, 82);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = false;
+            this.restart.BackColor = System.Drawing.Color.Transparent;
+            this.restart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.restart.Image = ((System.Drawing.Image)(resources.GetObject("restart.Image")));
+            this.restart.Location = new System.Drawing.Point(132, 287);
+            this.restart.Name = "restart";
+            this.restart.Size = new System.Drawing.Size(99, 82);
+            this.restart.TabIndex = 2;
+            this.restart.UseVisualStyleBackColor = false;
+            this.restart.Click += new System.EventHandler(this.restart_Click);
             // 
-            // button5
+            // dodawanie
             // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button5.Location = new System.Drawing.Point(590, 418);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(119, 53);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Dodaj piosenke";
-            this.button5.UseVisualStyleBackColor = false;
+            this.dodawanie.BackColor = System.Drawing.Color.Transparent;
+            this.dodawanie.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.dodawanie.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dodawanie.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.dodawanie.Location = new System.Drawing.Point(590, 418);
+            this.dodawanie.Name = "dodawanie";
+            this.dodawanie.Size = new System.Drawing.Size(119, 53);
+            this.dodawanie.TabIndex = 4;
+            this.dodawanie.Text = "Dodaj piosenke";
+            this.dodawanie.UseVisualStyleBackColor = false;
+            this.dodawanie.Click += new System.EventHandler(this.dodawanie_Click);
             // 
             // Losowosc
             // 
@@ -96,17 +100,30 @@ namespace Kolędnik
             this.Losowosc.Text = "Losowość";
             this.Losowosc.UseVisualStyleBackColor = false;
             // 
+            // listapiosenek
+            // 
+            this.listapiosenek.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.listapiosenek.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.listapiosenek.ForeColor = System.Drawing.Color.Red;
+            this.listapiosenek.FormattingEnabled = true;
+            this.listapiosenek.ItemHeight = 16;
+            this.listapiosenek.Location = new System.Drawing.Point(449, 89);
+            this.listapiosenek.Name = "listapiosenek";
+            this.listapiosenek.Size = new System.Drawing.Size(349, 276);
+            this.listapiosenek.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(830, 508);
+            this.Controls.Add(this.listapiosenek);
             this.Controls.Add(this.Losowosc);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dodawanie);
+            this.Controls.Add(this.restart);
+            this.Controls.Add(this.stop);
+            this.Controls.Add(this.play);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Name = "Form1";
             this.Text = "Christmas song";
@@ -116,11 +133,12 @@ namespace Kolędnik
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button play;
+        private System.Windows.Forms.Button stop;
+        private System.Windows.Forms.Button restart;
+        private System.Windows.Forms.Button dodawanie;
         private System.Windows.Forms.CheckBox Losowosc;
+        private System.Windows.Forms.ListBox listapiosenek;
     }
 }
 
