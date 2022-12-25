@@ -102,15 +102,17 @@ namespace Kolędnik
             // 
             // listapiosenek
             // 
-            this.listapiosenek.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.listapiosenek.BackColor = System.Drawing.SystemColors.Info;
+            this.listapiosenek.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listapiosenek.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.listapiosenek.ForeColor = System.Drawing.Color.Red;
             this.listapiosenek.FormattingEnabled = true;
             this.listapiosenek.ItemHeight = 16;
-            this.listapiosenek.Location = new System.Drawing.Point(449, 89);
+            this.listapiosenek.Location = new System.Drawing.Point(448, 89);
             this.listapiosenek.Name = "listapiosenek";
-            this.listapiosenek.Size = new System.Drawing.Size(349, 276);
+            this.listapiosenek.Size = new System.Drawing.Size(349, 272);
             this.listapiosenek.TabIndex = 6;
+            this.listapiosenek.SelectedIndexChanged += new System.EventHandler(this.listapiosenek_SelectedIndexChanged);
             // 
             // Form1
             // 

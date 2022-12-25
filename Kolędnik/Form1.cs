@@ -28,7 +28,7 @@ namespace Kolędnik
                 paths = ofd.FileNames;
                 for(int x = 0; x < files.Length; x++)
                 {
-                    
+                    listapiosenek.Items.Add(files[x]);
                 }
             }
         }
@@ -41,6 +41,11 @@ namespace Kolędnik
         private void restart_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void listapiosenek_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
