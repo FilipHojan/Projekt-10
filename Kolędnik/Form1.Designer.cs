@@ -101,6 +101,7 @@ namespace Kolędnik
             this.Losowosc.TabIndex = 5;
             this.Losowosc.Text = "Losowość";
             this.Losowosc.UseVisualStyleBackColor = false;
+            this.Losowosc.CheckedChanged += new System.EventHandler(this.Losowosc_CheckedChanged);
             // 
             // listapiosenek
             // 

@@ -12,6 +12,7 @@ namespace Kolędnik
 {
     public partial class Form1 : Form
     {
+        private readonly Random _random = new Random();
         public Form1()
         {
             InitializeComponent();
@@ -52,6 +53,13 @@ namespace Kolędnik
         private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void Losowosc_CheckedChanged(object sender, EventArgs e)
+        {
+            int randomIndex = _random.Next(listapiosenek.Items.Count);
+            var randomItem = listapiosenek.Items[randomIndex];
+            MessageBox.Show($"Random item at index {randomIndex} is {randomItem}");
         }
 
         private void button1_Click(object sender, EventArgs e)
