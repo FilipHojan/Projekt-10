@@ -35,22 +35,28 @@ namespace Kolędnik
 
         private void stop_Click(object sender, EventArgs e)
         {
-
+            player.Ctlcontrols.pause();
         }
 
         private void restart_Click(object sender, EventArgs e)
         {
-
+            player.Ctlcontrols.stop();
         }
 
         private void listapiosenek_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            player.URL = paths[listapiosenek.SelectedIndex];
+            player.Ctlcontrols.play();
+        }
+
+        private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
+        {
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            player.Ctlcontrols.play();
         }
     }
 }

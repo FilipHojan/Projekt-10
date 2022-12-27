@@ -36,6 +36,8 @@ namespace Kolędnik
             this.dodawanie = new System.Windows.Forms.Button();
             this.Losowosc = new System.Windows.Forms.CheckBox();
             this.listapiosenek = new System.Windows.Forms.ListBox();
+            this.player = new AxWMPLib.AxWindowsMediaPlayer();
+            ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             this.SuspendLayout();
             // 
             // play
@@ -108,11 +110,21 @@ namespace Kolędnik
             this.listapiosenek.ForeColor = System.Drawing.Color.Red;
             this.listapiosenek.FormattingEnabled = true;
             this.listapiosenek.ItemHeight = 16;
-            this.listapiosenek.Location = new System.Drawing.Point(448, 89);
+            this.listapiosenek.Location = new System.Drawing.Point(440, 89);
             this.listapiosenek.Name = "listapiosenek";
             this.listapiosenek.Size = new System.Drawing.Size(349, 272);
             this.listapiosenek.TabIndex = 6;
             this.listapiosenek.SelectedIndexChanged += new System.EventHandler(this.listapiosenek_SelectedIndexChanged);
+            // 
+            // player
+            // 
+            this.player.Enabled = true;
+            this.player.Location = new System.Drawing.Point(182, 327);
+            this.player.Name = "player";
+            this.player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("player.OcxState")));
+            this.player.Size = new System.Drawing.Size(10, 10);
+            this.player.TabIndex = 7;
+            this.player.Enter += new System.EventHandler(this.axWindowsMediaPlayer1_Enter);
             // 
             // Form1
             // 
@@ -120,6 +132,7 @@ namespace Kolędnik
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(830, 508);
+            this.Controls.Add(this.player);
             this.Controls.Add(this.listapiosenek);
             this.Controls.Add(this.Losowosc);
             this.Controls.Add(this.dodawanie);
@@ -129,6 +142,7 @@ namespace Kolędnik
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Name = "Form1";
             this.Text = "Christmas song";
+            ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -141,6 +155,7 @@ namespace Kolędnik
         private System.Windows.Forms.Button dodawanie;
         private System.Windows.Forms.CheckBox Losowosc;
         private System.Windows.Forms.ListBox listapiosenek;
+        private AxWMPLib.AxWindowsMediaPlayer player;
     }
 }
 
